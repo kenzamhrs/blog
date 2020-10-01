@@ -1,0 +1,2 @@
+class ArticlesAuthorsController < ApplicationController
+end
