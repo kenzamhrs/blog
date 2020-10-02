@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = @commentable.comments.new comment_params
+    @comment = @commentable.comments.new(comment_params)
     if @comment.save
       redirect_to [@commentable, :comments], notice: "Your comment was successfully posted"
     else

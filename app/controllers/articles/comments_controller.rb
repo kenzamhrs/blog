@@ -4,6 +4,6 @@ class Articles::CommentsController < CommentsController
   private
 
   def set_commentable
-    @commentable = Articles.find(params[:article_id])
+    @commentable = Article.find(params[:article_id])
   end
 end
